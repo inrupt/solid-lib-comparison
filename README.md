@@ -13,7 +13,7 @@ npm install;
 ```
 
 Then run either of the following commands to view the code for that library, and run `npm start` to
-start the application.
+start the application. The relevant code can be found in [`src/services`'](./src/services/).
 
 # ldflex
 
