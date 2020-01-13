@@ -7,8 +7,8 @@ interface Props {
 };
 
 export interface Profile {
-  name?: string;
-  nickname?: string;
+  name?: string | null;
+  nickname?: string | null;
 };
 
 export const ProfileEditor: React.FC<Props> = (props) => {
@@ -49,7 +49,7 @@ export const ProfileEditor: React.FC<Props> = (props) => {
             <label htmlFor="name" className="label">Name:</label>
             <input
               id="name"
-              value={(typeof nameField === 'string') ? nameField : profileData.name}
+              value={(typeof nameField === 'string') ? nameField : profileData.name || ''}
               onChange={(e) => setNameField(e.target.value)}
               type="text"
               className="input"
@@ -62,7 +62,7 @@ export const ProfileEditor: React.FC<Props> = (props) => {
             <label htmlFor="nickname" className="label">Nickname:</label>
             <input
               id="nickname"
-              value={(typeof nicknameField === 'string') ? nicknameField : profileData.nickname}
+              value={(typeof nicknameField === 'string') ? nicknameField : profileData.nickname || ''}
               onChange={(e) => setNickameField(e.target.value)}
               type="text"
               className="input"
