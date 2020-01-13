@@ -1,3 +1,10 @@
+# NOTICE
+
+This repository is a code dump containing the code from a live demo at [Solid
+Amsterdam](https://www.meetup.com/Solid-Netherlands/events/263745707/). It was intended to give a
+high-level overview of different approaches to Solid development with live commentary, and thus is
+not necessarily up-to-date, bug-free, or adhering to best practices.
+
 # Exploration of client-side RDF libraries
 
 An exploration of how to perform common operations using three Solid libraries.
