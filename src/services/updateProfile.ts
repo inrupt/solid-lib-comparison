@@ -2,7 +2,6 @@ import data from '@solid/query-ldflex';
 import { Profile } from '../components/ProfileEditor';
 
 export async function updateProfile(webId: string, profile: Profile): Promise<void> {
-  const person = data[webId];
-  await person.name.set(profile.name);
-  await person.nick.set(profile.nickname);
+  await data[webId].name.set(profile.name);
+  await data[webId].nick.set(profile.nickname);
 }
